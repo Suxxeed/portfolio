@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans|Lato&display=swap");
+html {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  line-height: 2.5;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+h1 {
+  font-family: "Alegreya Sans", cursive;
+  font-size: 3em;
+}
+
+a, b {
+  color: #EC9B3B;
+}
+
+p {
+  text-align: justify;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  width: 100%;
+  text-align: center;
+  left: 1000px;
+}
+
+nav ul {
+  line-height: .8;
+}
+
+section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin: 0 40px;
+  scroll-snap-align: center;
+}
+
+*::-moz-selection {
+  background: #EC9B3B;
+  color: #000000;
+}
+
+*::selection {
+  background: #EC9B3B;
+  color: #000000;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.text-algin-center {
+  text-align: center;
+}
+
+#background {
+  position: fixed;
+  pointer-events: none;
+  background-image: url("/assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+#projects {
+  font-size: 1.5em;
+  line-height: normal;
+}
+
+#projects li {
+  margin: 1em;
+}
+
+#showcaseDesktop {
+  left: 0;
+  padding: 20px 0;
+  z-index: 3;
+}
+
+#showcaseDesktop img {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  html {
+    overflow: hidden;
+  }
+  body {
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+/*# sourceMappingURL=main.css.map */
