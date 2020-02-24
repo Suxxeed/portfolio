@@ -6,17 +6,20 @@ $headline-font: 'Alegreya Sans', cursive
 
 html
     font-family: $primary-font
-    font-weight: bold
     line-height: 2.5
     font-size: 1em
     text-align: center
     text-transform: uppercase
     color: #ffffff
+    overflow: hidden
 
 body
     margin: 0
     padding: 0
-    background-color: #000000
+    overflow: scroll
+    height: 100vh
+    scroll-snap-type: mandatory
+    scroll-snap-points-y: repeat(100vh)
     scroll-snap-type: y mandatory
 
 h1
@@ -35,12 +38,13 @@ ul
     margin: 0    
 
 nav
+    color: #000000
     position: fixed
     min-height: 100vh
     min-height: -webkit-fill-available
     width: 100%
     text-align: center
-    left: 1000px
+    left: -9000px
     ul
         line-height: .8
 
@@ -67,38 +71,32 @@ section
 .text-algin-center
     text-align: center
 
-.strikeout 
-  font-size: 1.5em
-  line-height: 1em
-  position: relative
+.visible-menu
+    left: 0
 
-.strikeout::after 
-  border-bottom: 0.3em solid $primary-color
-  content: ""
-  left: 0
-  margin-top: calc(0.3em / 2 * -1)
-  position: absolute
-  right: 0
-  top: 50%
+.background-filter
+    filter: brightness(2000%) contrast(100%) !important
+    z-index: 5
+    opacity: 0.3
 
 #background
     position: fixed
     pointer-events: none
     background-image: url("/assets/background.jpg")
-    background-repeat: no-repeat
     background-size: cover
+    background-color: #ffffff
+    filter: brightness(10%)
     height: 100%
     width: 100%
     top: 0
     left: 0
 
 #projects
-    font-size: 1.5em
-    line-height: normal
-    li
-        margin: 1em
+    font-size: 1.2em
+    ul
+        padding: 1em 0
 
-#showcaseDesktop
+#desktop
     left: 0
     padding: 20px 0
     z-index: 3
@@ -113,4 +111,12 @@ section
         position: fixed
         overflow-y: scroll
         -webkit-overflow-scrolling: touch
+
+@media only screen and (min-width: 768px)
+    h2, p
+        width: 60%
+
+@media only screen and (min-width: 1024px)
+    h2, p
+        width: 40%
       
