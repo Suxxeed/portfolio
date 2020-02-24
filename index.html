@@ -13,22 +13,21 @@
 
 <body>
     <div id="background"></div>
-    <nav>
+    <nav class="visible-menu">
         <ul class="vertical-center">
             <li>
-                <h1 class="strikeout">home</h1>
+                <h1>home</h1><img src="/assets/svgs/home.svg" alt="home button">
             </li>
             <li>
-                <h1>projects</h1>
+                <h1>projects</h1><img src="/assets/svgs/code.svg" alt="home button">
             </li>
             <li>
-                <h1>about</h1>
+                <h1>about</h1><img src="/assets/svgs/info.svg" alt="home button">
             </li>
             <li>
-                <h1>contact</h1>
+                <h1>contact</h1><img src="/assets/svgs/contact.svg" alt="home button">
             </li>
         </ul>
-        <img src="" alt="open/close menu">
     </nav>
     <section id="home">
         <h2>Hi, I'm Florian</h2>
@@ -45,8 +44,10 @@
             <li>Mariama App</li>
             <li>Sickmund Music</li>
         </ul>
-        <div id="showcaseMobile"></div>
-        <div id="showcaseDesktop"><img src="assets/museumsgasthof_desktop.png" alt=""> </div>
+        <div id="showcase">
+            <div id="mobile"></div>
+            <div id="desktop"><img src="assets/museumsgasthof_desktop.png" alt=""> </div>
+        </div>
     </section>
     <section id="about">
         <p>LOREM IPSUM DOLOR SIT AMET, CONSETETUR <u>SADIPSCING</u> ELITR, SED DIAM NONUMY EIRMOD TEMPOR INVIDUNT UT
@@ -56,7 +57,7 @@
             GitHub <br> VSCode / Figma /</p>
     </section>
     <section id="contact">
-        <p>Don't hesitat and contact me <br>I'm glad</p>
+        <p class="text-algin-center">Don't hesitat and contact me <br>I'm glad</p>
         <a href="mailto:suxxeedev@gmail.com?subject=Anfrage über Homepage" class="colored-text">
             suxxeedev@gmail.com</a>
     </section>
