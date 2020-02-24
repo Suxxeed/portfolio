@@ -39,14 +39,14 @@
     </section>
     <section id="projects">
         <ul>
-            <li>Museumsgasthof Ochsen</li>
-            <li>Feuer</li>
-            <li>Mariama App</li>
-            <li>Sickmund Music</li>
+            <li onclick="changeProjects('ochsen')">Museumsgasthof Ochsen</li>
+            <li onclick="changeProjects('element')">Feuer</li>
+            <li onclick="changeProjects('ochsen')">Mariama App</li>
+            <li onclick="changeProjects('sickmund')">Sickmund Music</li>
         </ul>
         <div id="showcase">
             <div id="mobile"></div>
-            <div id="desktop"><img src="assets/museumsgasthof_desktop.png" alt=""> </div>
+            <div id="desktop"><img id="desktopimg" src="/assets/ochsen_desktop.png" alt=""> </div>
         </div>
     </section>
     <section id="about">
@@ -61,6 +61,8 @@
         <a href="mailto:suxxeedev@gmail.com?subject=Anfrage über Homepage" class="colored-text">
             suxxeedev@gmail.com</a>
     </section>
+
+    <script src="/scripts/main.js"></script>
 </body>
 
 </html>
